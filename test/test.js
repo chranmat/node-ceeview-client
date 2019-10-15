@@ -63,6 +63,10 @@ describe('Class tests', () => {
             assert.equal(service.obj.unit, 'PERCENT');
         });
 
+        it('Should match interval property', () => {
+            assert.equal(service.obj.interval, 60);
+        });
+
         it('Should be bool (errorOnMissing prop)', () => {
             assert.isBoolean(service.obj.errorOnMissing);
         });
