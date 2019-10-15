@@ -13,7 +13,7 @@ It will help you understand users’ experience as well as service and infrastru
 
 # Getting started
 
-Install with NPM
+Install with npm:
 ```
 npm i ceeview-client
 ```
