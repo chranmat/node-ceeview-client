@@ -1,6 +1,6 @@
 {
   "name": "ceeview-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "CeeView Metric Client",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,9 @@
     "url": "https://github.com/chranmat/node-ceeview-client"
   },
   "keywords": [
-    "proxy",
-    "reverse",
-    "docker",
-    "etcd"
+    "ceeview",
+    "metric",
+    "monitoring"
   ],
   "author": "Christian A. Mathiesen",
   "license": "MIT",
