@@ -24,11 +24,8 @@ describe('Class tests', () => {
             assert.equal(ceeview.apiToken, '1337');
         });
 
-        it('Should be bool (insecure prop)', () => {
+        it('Should be bool and true (insecure prop)', () => {
             assert.isBoolean(ceeview.insecure);
-        });
-
-        it('Should be true (insecure prop)', () => {
             assert.isTrue(ceeview.insecure);
         });
     });
@@ -43,11 +40,8 @@ describe('Class tests', () => {
             assert.equal(service.host, 'ceeview.example.com');
         });
 
-        it('Should be bool (insecure prop)', () => {
+        it('Should be bool and true (insecure prop)', () => {
             assert.isBoolean(service.insecure);
-        });
-
-        it('Should be true (insecure prop)', () => {
             assert.isTrue(service.insecure);
         });
 
@@ -63,16 +57,9 @@ describe('Class tests', () => {
             assert.equal(service.obj.interval, 300);
         });
 
-        it('Should be bool (errorOnMissing prop)', () => {
+        it('Should be bool and true (errorOnMissing prop)', () => {
             assert.isBoolean(service.obj.errorOnMissing);
-        });
-
-        it('Should be true (errorOnMissing prop)', () => {
             assert.isTrue(service.obj.errorOnMissing);
-        });
-
-        it('Should be array (data array)', () => {
-            assert.isArray(service.obj.data)
         });
 
     });
