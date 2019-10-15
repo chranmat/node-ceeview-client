@@ -1,0 +1,15 @@
+{
+  "name": "ceeview-client",
+  "version": "0.0.1",
+  "description": "CeeView Metric Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Christian A. Mathiesen",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  }
+}
