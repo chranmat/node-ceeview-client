@@ -6,7 +6,7 @@ const CeeView = require('../index');
 // Test begin
 
 const ceeview = new CeeView('ceeview.example.com', '1337', true);
-const service = ceeview.Service(2, 'LE', 'PERCENT');
+const service = ceeview.Service(2, 'LE', 'PERCENT', 300);
 
 describe('Class tests', () => {
 
@@ -64,7 +64,7 @@ describe('Class tests', () => {
         });
 
         it('Should match interval property', () => {
-            assert.equal(service.obj.interval, 60);
+            assert.equal(service.obj.interval, 300);
         });
 
         it('Should be bool (errorOnMissing prop)', () => {
