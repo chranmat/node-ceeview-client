@@ -6,6 +6,16 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chranmat/node-ceeview-client"
+  },
+  "keywords": [
+    "proxy",
+    "reverse",
+    "docker",
+    "etcd"
+  ],
   "author": "Christian A. Mathiesen",
   "license": "MIT",
   "devDependencies": {
