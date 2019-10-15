@@ -13,7 +13,7 @@ It will help you understand users’ experience as well as service and infrastru
 
 # Getting started
 
-Install with npm:
+Install:
 ```
 npm i ceeview-client
 ```
@@ -27,11 +27,11 @@ const CeeView = require('ceeview-client');
 const ceeview = new CeeView('ceeview.example.com', '1234-1234-1234-1234');
 
 // Define the service request properties (threshold, operator, unit)
-const service = ceeview.Service(2, 'LE', 'VALUE');
+const service = ceeview.Service('VALUE');
 
-// Add metrics for different services (service, element, qualifier, value)
-service.Metric('ServiceA', 'ElementA', 'QualifierA', 1);
-service.Metric('ServiceA', 'ElementB', 'QualifierB', 2);
+// Add metrics for different services (service, element, qualifier, threshold, operator, value, warning?)
+service.Metric('ServiceA', 'ElementA', 'QualifierA', 10, 'LE', 2, 5);
+service.Metric('ServiceA', 'ElementA', 'QualifierA', 10, 'LE', 4, 5);
 
 // Send the request to the CeeView API
 service.Send().then(function(response) {
