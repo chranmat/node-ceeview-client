@@ -8,8 +8,8 @@ class CeeView {
         this.insecure = insecure;
     }
 
-    Service(unit, interval=60, errorOnMissing=false) {
-        return new Service(this.host, this.apiToken, this.insecure, unit, interval, errorOnMissing);
+    Service(threshold, operator, unit, type='NUMERIC', errorOnMissing=false, breachOnMissing=false, interval=900) {
+        return new Service(this.host, this.apiToken, this.insecure, threshold, operator, unit, type, errorOnMissing, breachOnMissing, interval);
     }
 }
 
