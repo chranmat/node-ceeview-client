@@ -26,12 +26,11 @@ const CeeView = require('ceeview-client');
 // Instantiate class (define server settings)
 const ceeview = new CeeView('ceeview.example.com', '1234-1234-1234-1234');
 
-// Define the service request properties (threshold, operator, unit)
-const service = ceeview.Service('VALUE');
+// Define the service request properties.
+const service = ceeview.Service(3, 'LE', 'VALUE');
 
-// Add metrics for different services (service, element, qualifier, threshold, operator, value, warning?)
-service.Metric('ServiceA', 'ElementA', 'QualifierA', 10, 'LE', 2, 5);
-service.Metric('ServiceA', 'ElementA', 'QualifierA', 10, 'LE', 4, 5);
+// Add metrics for different services
+service.Metric('Service', 'Element', 'Qualifier', 1);
 
 // Send the request to the CeeView API
 service.Send().then(function(response) {
